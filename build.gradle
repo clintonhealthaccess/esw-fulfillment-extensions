@@ -1,0 +1,21 @@
+
+repositories {
+    mavenCentral()
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+}
+
+configurations {
+    extension {
+        transitive = false
+    }
+}
+
+dependencies {
+//    extension "org.openlmis:esw-order-create-post-extension:1.0.0-SNAPSHOT"
+    extension files("esw-order-create-post-extension-1.0.0-SNAPSHOT.jar")
+}
+
+task copyExtensions(type: Copy) {
+    from configurations.extension.files
+    into 'build/extensions/'
+}

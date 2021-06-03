@@ -1,0 +1,12 @@
+version: "2"
+services:
+
+  esw-fulfillment-extensions:
+    image: openlmis/dev:6
+    volumes:
+      - '.:/app'
+      - 'gradlecache:/gradle'
+
+volumes:
+  gradlecache:
+    external: false

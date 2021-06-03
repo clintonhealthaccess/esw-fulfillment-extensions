@@ -1,0 +1,11 @@
+version: "2"
+services:
+
+  esw-fulfillment-extensions:
+    image: openlmis/esw-fulfillment-extensions
+    volumes:
+      - 'extensions:/extensions'
+
+volumes:
+  extensions:
+    external: false
