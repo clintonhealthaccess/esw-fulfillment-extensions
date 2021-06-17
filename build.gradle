@@ -13,6 +13,7 @@ configurations {
 dependencies {
 //    extension "org.openlmis:esw-order-create-post-extension:1.0.0-SNAPSHOT"
     extension files("esw-order-create-post-extension-1.0.0-SNAPSHOT.jar")
+    extension files("esw-shipment-create-post-extension-1.0.0-SNAPSHOT.jar")
 }
 
 task copyExtensions(type: Copy) {
