@@ -2,7 +2,7 @@ version: "2"
 services:
 
   esw-fulfillment-extensions:
-    image: openlmis/esw-fulfillment-extensions
+    image: kausamusa/esw-fulfillment-extensions
     volumes:
       - 'extensions:/extensions'
 
