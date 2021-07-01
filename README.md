@@ -7,5 +7,5 @@ This is a Docker image containing extensions for Eswatini's OpenLMIS Fulfillment
 3. Edit configuration file `extensions.properties` to use your defined extension.
 4. Run builder with the command `docker-compose -f docker-compose.builder.yml run builder`.
 5. Build the image with the command `docker-compose -f docker-compose.builder build image`.
-6. Run the Eswatini Distro using `docker-compose.extension.yml` and check if your changes has been applied.
+6. Run the Eswatini Distro, ensuring the fulfillment extensions are included.
 7. Check if the application behavior has changed according to the implemented extension point. 
